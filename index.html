@@ -5,17 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
-    <header class="header"><h1>Quiz App</h1></header>
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
     <main>
       <div class="questionCard">
         <p>What property flips the axes in flexbox?</p>
-        <button>Show Answer</button>
+        <div class="answerButton"><button>Show Answer</button></div>
         <div class="categoryTags">
           <span>#html</span>
           <span>#flexbox</span>
           <span>#css</span>
+        </div>
+        <div>
           <img
             class="bookmarkIcon"
             src="assets/bookmark-white.svg"
@@ -23,6 +31,7 @@
           />
         </div>
       </div>
+
       <div class="questionCard">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi impedit
@@ -30,11 +39,13 @@
           corrupti natus doloribus architecto ut vitae! Repellendus,
           perferendis. Illum hic eius a rerum?
         </p>
-        <button>Show Answer</button>
+        <div class="answerButton"><button>Show Answer</button></div>
         <div class="categoryTags">
           <span>#html</span>
           <span>#flexbox</span>
           <span>#css</span>
+        </div>
+        <div>
           <img
             class="bookmarkIcon"
             src="assets/bookmark-white.svg"
@@ -43,5 +54,20 @@
         </div>
       </div>
     </main>
+    <footer>
+      <nav class="nav">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="#" class="icon-link"><i class="fas fa-home"></i> </a>
+          </li>
+          <li>
+            <a href="#" class="icon-link"><i class="fas fa-bookmark"></i> </a>
+          </li>
+          <li>
+            <a href="#" class="icon-link"><i class="fas fa-user"></i> </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
