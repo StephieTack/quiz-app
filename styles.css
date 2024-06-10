@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
+  font-size: 1.3rem;
+  background-color: lightgray;
 }
 
 .header {
@@ -8,4 +10,51 @@
   justify-content: center;
   background-color: aquamarine;
   padding: 24px;
+}
+
+h1 {
+  background-color: aquamarine;
+}
+
+.questionCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: gray;
+  border: black solid;
+  border-radius: 4px;
+  margin: 40px;
+  padding: 30px;
+}
+
+p {
+  background-color: gray;
+  text-align: center;
+}
+
+.categoryTags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: gray;
+}
+
+.categoryTags span {
+  border: black solid;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+button {
+  border: black solid;
+  border-radius: 4px;
+  background-color: aquamarine;
+  font-size: 1.1rem;
+  padding: 12px;
+}
+
+button:hover {
+  background-color: aqua;
 }
