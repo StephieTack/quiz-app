@@ -21,6 +21,7 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 16px;
+  position: relative;
   background-color: gray;
   border: black solid;
   border-radius: 4px;
@@ -48,7 +49,7 @@ p {
 }
 
 button {
-  border: black solid;
+  border: #000000 solid;
   border-radius: 4px;
   background-color: aquamarine;
   font-size: 1.1rem;
@@ -57,4 +58,12 @@ button {
 
 button:hover {
   background-color: aqua;
+}
+
+.bookmarkIcon {
+  position: absolute;
+  top: -16px;
+  right: 20px;
+  height: 35px;
+  width: 35px;
 }
