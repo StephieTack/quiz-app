@@ -29,7 +29,7 @@ h1 {
   background-color: #bbd9d9;
   border: black solid;
   border-radius: 4px;
-  margin: 40px;
+  margin: 60px 40px;
   padding: 20px 0;
   font-size: 1.5rem;
 }
@@ -113,4 +113,15 @@ i:active {
 .icon-link {
   background-color: #109090;
   color: #109090;
+  text-align: center;
+}
+
+/* Highlighting the active link */
+.icon-link.active {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+.icon-link.active i {
+  color: #000;
 }
