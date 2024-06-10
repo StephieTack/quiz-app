@@ -79,11 +79,13 @@ button:hover {
   right: 20px;
   height: 35px;
   width: 35px;
+  background: linear-gradient(to bottom, #ddecec, #bbd9d9);
 }
 
 nav {
-  /* display: flex;
-  justify-content: center; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #109090;
 }
 
@@ -100,7 +102,7 @@ nav {
 i {
   color: white;
   background-color: #109090;
-  font-size: 75px;
+  font-size: 60px;
   padding: 15px;
 }
 
