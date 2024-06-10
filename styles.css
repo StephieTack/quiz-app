@@ -110,18 +110,12 @@ i:active {
   background-color: #1a5e5e;
 }
 
-.icon-link {
+.iconLink {
   background-color: #109090;
   color: #109090;
   text-align: center;
 }
 
-/* Highlighting the active link */
-.icon-link.active {
-  background-color: #ffcc00;
-  color: #000;
-}
-
-.icon-link.active i {
-  color: #000;
-}
+.activeIconLink i {
+  color: #194746;
+  background-color: #bbd9d9;
