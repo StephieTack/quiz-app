@@ -1,19 +1,23 @@
 * {
   box-sizing: border-box;
-  margin: auto;
-  font-size: 1.3rem;
-  background-color: lightgray;
+  background-color: #ddecec;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  background-color: aquamarine;
+  text-align: center;
+  background-color: #109090;
   padding: 24px;
 }
 
 h1 {
-  background-color: aquamarine;
+  background-color: #109090;
+  font-size: 2rem;
+  color: white;
 }
 
 .questionCard {
@@ -22,42 +26,51 @@ h1 {
   flex-wrap: wrap;
   gap: 16px;
   position: relative;
-  background-color: gray;
+  background-color: #bbd9d9;
   border: black solid;
   border-radius: 4px;
   margin: 40px;
-  padding: 30px;
+  padding: 20px 0;
+  font-size: 1.5rem;
 }
 
 p {
-  background-color: gray;
+  background-color: #bbd9d9;
   text-align: center;
 }
 
-.categoryTags {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  background-color: gray;
-}
-
-.categoryTags span {
-  border: black solid;
-  padding: 4px;
-  border-radius: 4px;
-  font-size: 1.1rem;
+.answerButton {
+  text-align: center;
+  background-color: #bbd9d9;
 }
 
 button {
+  width: fit-content;
+  padding: 12px;
   border: #000000 solid;
   border-radius: 4px;
-  background-color: aquamarine;
-  font-size: 1.1rem;
-  padding: 12px;
+  background-color: #109090;
+  font-size: 1.2rem;
 }
 
 button:hover {
-  background-color: aqua;
+  background-color: #1a5e5e;
+  color: white;
+  transition: 0.5s;
+}
+
+.categoryTags {
+  padding: 16px;
+  background-color: #bbd9d9;
+}
+
+.categoryTags span {
+  text-align: left;
+  border: black solid;
+  background-color: lightgray;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 1.1rem;
 }
 
 .bookmarkIcon {
@@ -74,22 +87,22 @@ nav {
 }
 
 li {
-  background-color: aquamarine;
+  background-color: #109090;
 }
 
 .breadcrumbs {
   list-style: none;
-  background-color: aquamarine;
+  background-color: #109090;
 }
 
 i {
   color: black;
-  background-color: aquamarine;
+  background-color: #109090;
   font-size: 75px;
   padding: 15px;
 }
 
 .icon-link {
-  background-color: aquamarine;
-  color: aquamarine;
+  background-color: #109090;
+  color: #109090;
 }
