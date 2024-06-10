@@ -67,3 +67,29 @@ button:hover {
   height: 35px;
   width: 35px;
 }
+
+nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+li {
+  background-color: aquamarine;
+}
+
+.breadcrumbs {
+  list-style: none;
+  background-color: aquamarine;
+}
+
+i {
+  color: black;
+  background-color: aquamarine;
+  font-size: 75px;
+  padding: 15px;
+}
+
+.icon-link {
+  background-color: aquamarine;
+  color: aquamarine;
+}
