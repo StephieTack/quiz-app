@@ -79,6 +79,7 @@ button:hover {
   right: 20px;
   height: 35px;
   width: 35px;
+  background: linear-gradient(to bottom, #ddecec, #bbd9d9);
 }
 
 nav {
