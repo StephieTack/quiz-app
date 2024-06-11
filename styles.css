@@ -24,21 +24,7 @@ h1 {
   padding: 0 16px;
 }
 
-.questionCard1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 16px;
-  position: relative;
-  background-color: #bbd9d9;
-  border: black solid;
-  border-radius: 4px;
-  margin: 40px 20px;
-  padding: 20px 10px;
-  font-size: 1.5rem;
-}
-
-.questionCard2 {
+.questionCard {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -75,12 +61,16 @@ button:hover {
 }
 
 .categoryTags {
+  display: flex;
+  gap: 8px;
   padding: 16px;
   background-color: #bbd9d9;
 }
 
-.categoryTags span {
-  text-align: left;
+.categoryTags li {
+  align-self: flex-start;
+  width: fit-content;
+  list-style: none;
   border: black solid;
   background-color: lightgray;
   padding: 4px;
