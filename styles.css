@@ -83,16 +83,15 @@ button:hover {
   font-size: 1.1rem;
 }
 
-.bookmarkButton {
-  width: fit-content;
-  padding: 12px;
-  border: #000000 solid;
-  border-radius: 4px;
-  background-color: #109090;
-  font-size: 1.2rem;
+.toggleButton {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
 }
 
-.bookmarkIcon {
+.buttonImage {
   position: absolute;
   top: -16px;
   right: 20px;
