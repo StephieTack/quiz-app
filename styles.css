@@ -35,7 +35,7 @@ h1 {
   border: black solid;
   border-radius: 4px;
   margin: 60px 40px;
-  padding: 20px 0;
+  padding: 20px 10px;
   font-size: 1.5rem;
 }
 
@@ -49,21 +49,18 @@ h1 {
   border: black solid;
   border-radius: 4px;
   margin: 60px 40px;
-  padding: 20px 0;
+  padding: 20px 10px;
   font-size: 1.5rem;
 }
 
+/* sollte das lieber eine h2 sein?  */
 p {
   background-color: #bbd9d9;
   text-align: center;
 }
 
+/* wie kriege ich den button zentriert? Seitdemdas Div gelöscht ist, geht es nicht */
 .answerButton {
-  text-align: center;
-  background-color: #bbd9d9;
-}
-
-button {
   width: fit-content;
   padding: 12px;
   border: #000000 solid;
