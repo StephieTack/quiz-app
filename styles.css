@@ -59,8 +59,8 @@ p {
   text-align: center;
 }
 
-/* wie kriege ich den button zentriert? Seitdemdas Div gelöscht ist, geht es nicht */
 .answerButton {
+  align-self: center;
   width: fit-content;
   padding: 12px;
   border: #000000 solid;
