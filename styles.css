@@ -38,8 +38,9 @@ h1 {
   font-size: 1.5rem;
 }
 
-/* sollte das lieber eine h2 sein?  */
-p {
+h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
   background-color: #bbd9d9;
   text-align: center;
 }
