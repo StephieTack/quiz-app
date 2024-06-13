@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -20,6 +20,10 @@ h1 {
   color: white;
 }
 
+.containerQuestionCards {
+  padding: 0 16px;
+}
+
 .questionCard {
   display: flex;
   flex-direction: column;
@@ -29,22 +33,19 @@ h1 {
   background-color: #bbd9d9;
   border: black solid;
   border-radius: 4px;
-  margin: 60px 40px;
-  padding: 20px 0;
+  margin: 40px 20px;
+  padding: 20px 10px;
   font-size: 1.5rem;
 }
 
+/* sollte das lieber eine h2 sein?  */
 p {
   background-color: #bbd9d9;
   text-align: center;
 }
 
 .answerButton {
-  text-align: center;
-  background-color: #bbd9d9;
-}
-
-button {
+  align-self: center;
   width: fit-content;
   padding: 12px;
   border: #000000 solid;
@@ -60,12 +61,16 @@ button:hover {
 }
 
 .categoryTags {
+  display: flex;
+  gap: 8px;
   padding: 16px;
   background-color: #bbd9d9;
 }
 
-.categoryTags span {
-  text-align: left;
+.categoryTags li {
+  align-self: flex-start;
+  width: fit-content;
+  list-style: none;
   border: black solid;
   background-color: lightgray;
   padding: 4px;
