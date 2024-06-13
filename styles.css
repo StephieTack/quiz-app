@@ -3,8 +3,12 @@
   background-color: #ddecec;
 }
 
+main {
+  padding-bottom: 80px;
+}
+
 body {
-  margin: 0px;
+  margin: 0;
   padding: 0;
 }
 
@@ -38,8 +42,9 @@ h1 {
   font-size: 1.5rem;
 }
 
-/* sollte das lieber eine h2 sein?  */
-p {
+h2 {
+  font-size: 1.5rem;
+  font-weight: lighter;
   background-color: #bbd9d9;
   text-align: center;
 }
@@ -78,7 +83,15 @@ button:hover {
   font-size: 1.1rem;
 }
 
-.bookmarkIcon {
+.toggleButton {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttonImage {
   position: absolute;
   top: -16px;
   right: 20px;
