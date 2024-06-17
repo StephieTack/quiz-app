@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
   </head>
-  <body id="bookmarks">
+  <body id="bookmark">
     <header class="header">
       <h1>Quiz App</h1>
     </header>
@@ -18,8 +18,10 @@
       <ul class="containerQuestionCards">
         <li class="questionCard">
           <h2>???</h2>
-          <button class="answerButton">Show Answer</button>
-          <p>flex-direction</p>
+          <button class="answerButton" aria-expanded="false">
+            Show Answer
+          </button>
+          <p hidden>flex-direction</p>
           <ul class="categoryTags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -29,14 +31,16 @@
             <img
               class="bookmarkIcon"
               src="assets/bookmark-black.svg"
-              alt="bookmark"
+              alt="bookmark this question"
             />
           </div>
         </li>
         <li class="questionCard">
           <h2>???</h2>
-          <button class="answerButton">Show Answer</button>
-          <p>flex-direction</p>
+          <button class="answerButton" aria-expanded="false">
+            Show Answer
+          </button>
+          <p hidden>flex-direction</p>
           <ul class="categoryTags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -46,7 +50,7 @@
             <img
               class="bookmarkIcon"
               src="assets/bookmark-white.svg"
-              alt="bookmark icon"
+              alt="bookmark this question"
             />
           </button>
         </li>
@@ -56,17 +60,20 @@
       <nav class="nav">
         <ul class="breadcrumbs">
           <li>
-            <a href="index.html" class="iconLink"
+            <a href="index.html" class="iconLink" aria-label="Home"
               ><i class="fas fa-home"></i>
             </a>
           </li>
           <li>
-            <a href="bookmarks.html" class="activeIconLink"
+            <a
+              href="bookmarks.html"
+              class="activeIconLink"
+              aria-label="Bookmarks"
               ><i class="fas fa-bookmark"></i>
             </a>
           </li>
           <li>
-            <a href="profile.html" class="iconLink"
+            <a href="profile.html" class="iconLink" aria-label="Profile"
               ><i class="fas fa-user"></i>
             </a>
           </li>
