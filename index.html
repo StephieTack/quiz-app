@@ -19,8 +19,10 @@
       <ul class="containerQuestionCards">
         <li class="questionCard">
           <h2>What property flips the axes in flexbox?</h2>
-          <button class="answerButton">Show Answer</button>
-          <p>flex-direction</p>
+          <button class="answerButton" aria-expanded="false">
+            Show Answer
+          </button>
+          <p hidden>flex-direction</p>
           <ul class="categoryTags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -28,9 +30,11 @@
           </ul>
           <button class="toggleButton">
             <img
-              class="buttonImage"
-              src="assets/bookmark-white.svg"
-              alt="bookmark icon"
+
+              class="bookmarkIcon"
+              src="assets/bookmark-black.svg"
+              alt="bookmark this question"
+
             />
           </button>
         </li>
@@ -41,8 +45,10 @@
             totam aut doloribus libero nemo dolorem neque, animi modi ipsam.
             Dolore?
           </h2>
-          <button class="answerButton">Show Answer</button>
-          <p>flex-direction</p>
+          <button class="answerButton" aria-expanded="false">
+            Show Answer
+          </button>
+          <p hidden>flex-direction</p>
           <ul class="categoryTags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -52,7 +58,7 @@
             <img
               class="buttonImage"
               src="assets/bookmark-white.svg"
-              alt="bookmark icon"
+              alt="bookmark this question"
             />
           </button>
         </li>
@@ -62,17 +68,17 @@
       <nav class="nav">
         <ul class="breadcrumbs">
           <li>
-            <a href="index.html" class="activeIconLink"
+            <a href="index.html" class="activeIconLink" aria-label="Home"
               ><i class="fas fa-home"></i>
             </a>
           </li>
           <li>
-            <a href="bookmarks.html" class="iconLink"
+            <a href="bookmarks.html" class="iconLink" aria-label="Bookmarks"
               ><i class="fas fa-bookmark"></i>
             </a>
           </li>
           <li>
-            <a href="profile.html" class="iconLink"
+            <a href="profile.html" class="iconLink" aria-label="Profile"
               ><i class="fas fa-user"></i>
             </a>
           </li>
