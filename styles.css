@@ -1,12 +1,10 @@
-@import "global.css";
+@import "./global.css";
 @import "./components/button.css";
 @import "./components/card.css";
 @import "./components/header.css";
 @import "./components/navigation.css";
 
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
   background-color: #ddecec;
 }
