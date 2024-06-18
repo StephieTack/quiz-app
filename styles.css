@@ -144,3 +144,7 @@ i:active {
   color: #194746;
   background-color: #bbd9d9;
 }
+
+.profile__stage {
+  display: flex;
+}
