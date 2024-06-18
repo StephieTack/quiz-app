@@ -147,4 +147,25 @@ i:active {
 
 .profile__stage {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+}
+
+.profile__stage img {
+  border-radius: 100%;
+}
+
+.profile__stage h2 {
+  background-color: #ddecec;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.about {
+  padding-inline: 40px;
 }
