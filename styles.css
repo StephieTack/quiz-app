@@ -65,7 +65,8 @@ h2 {
   font-size: 1.2rem;
 }
 
-button:hover {
+button:hover,
+output {
   background-color: #1a5e5e;
   color: white;
   transition: 0.5s;
@@ -145,6 +146,12 @@ i:active {
   background-color: #bbd9d9;
 }
 
+/* Profilepage */
+
+#profile main {
+  padding-bottom: 120px;
+}
+
 .profile__stage {
   display: flex;
   justify-content: space-evenly;
@@ -166,6 +173,35 @@ h3 {
   font-size: 1.4rem;
 }
 
-.about {
+.about,
+.jsFunctions {
   padding-inline: 40px;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.settings {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.jsFunctions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Optional: Abstand zwischen den Buttons */
+}
+
+.jsButton {
+  /* Optional: Weitere Stile für die Buttons */
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+output {
+  color: violet;
+  background-color: #ddecec;
+  font-size: 1.3rem;
+  font-weight: bold;
 }

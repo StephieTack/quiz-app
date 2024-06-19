@@ -9,3 +9,17 @@ document.querySelectorAll(".toggleButton").forEach((button) => {
     }
   });
 });
+
+let operand1 = 1;
+const output = document.querySelector('[data-js="like-output"]');
+
+const increaseByOneButton = document.querySelector(
+  '[data-js="increase-likes"]'
+);
+
+increaseByOneButton.addEventListener("click", () => {
+  let increaseByOneButton = operand1++;
+
+  output.textContent = increaseByOneButton;
+  console.log(increaseByOneButton);
+});
