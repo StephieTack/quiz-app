@@ -27,6 +27,11 @@ body {
   color: white;
 }
 
+main.dark output {
+  color: violet;
+  background-color: transparent;
+}
+
 main.dark h2 {
   background-color: black;
 }
@@ -84,8 +89,7 @@ h2 {
   font-size: 1.2rem;
 }
 
-button:hover,
-output {
+button:hover {
   background-color: #1a5e5e;
   color: white;
   transition: 0.5s;
@@ -204,6 +208,7 @@ p {
 .settings {
   margin-bottom: 0px;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .jsFunctions {
@@ -219,9 +224,14 @@ p {
   background-color: #109090;
 }
 
-output {
+.outputTextLikes {
   color: violet;
-  background-color: #109090;
-  font-size: 1.3rem;
+  background-color: transparent;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+.darkmode {
+  display: flex;
+  gap: 80px;
 }
