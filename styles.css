@@ -9,13 +9,32 @@
   background-color: #ddecec;
 }
 
-main {
-  padding-bottom: 80px;
-}
-
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.dark * {
+  background-color: black;
+  color: white;
+}
+
+main.dark h2 {
+  background-color: black;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 80px;
+  background-color: #ddecec;
 }
 
 .header {
@@ -197,11 +216,12 @@ p {
   /* Optional: Weitere Stile für die Buttons */
   padding: 10px 20px;
   font-size: 16px;
+  background-color: #109090;
 }
 
 output {
   color: violet;
-  background-color: #ddecec;
+  background-color: #109090;
   font-size: 1.3rem;
   font-weight: bold;
 }
