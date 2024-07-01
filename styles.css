@@ -3,6 +3,7 @@
 @import "./components/card.css";
 @import "./components/header.css";
 @import "./components/navigation.css";
+@import "./components/form.css";
 
 * {
   box-sizing: border-box;
