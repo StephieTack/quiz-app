@@ -1,7 +1,8 @@
+// bookmark toggle
 document.querySelectorAll(".toggleButton").forEach((button) => {
   button.addEventListener("click", function () {
-    var img = button.querySelector(".buttonImage");
-    var currentSrc = img.getAttribute("src");
+    let img = button.querySelector(".buttonImage");
+    let currentSrc = img.getAttribute("src");
     if (currentSrc.endsWith("bookmark-white.svg")) {
       img.setAttribute("src", "assets/bookmark-black.svg");
     } else {
@@ -10,24 +11,27 @@ document.querySelectorAll(".toggleButton").forEach((button) => {
   });
 });
 
-let operand1 = 1;
-const output = document.querySelector('[data-js="like-output"]');
+// Show hidden-text toggle
+// Selects only buttons with the fitting data-js
+document.addEventListener("DOMContentLoaded", () => {
+  // Select only buttons with the data attribute 'data-js="answer-button"'
+  const showAnswerButtons = document.querySelectorAll(
+    '[data-js="answer-button"]'
+  );
+  const answerTexts = document.querySelectorAll('[data-js="answer-text"]');
 
-const increaseByOneButton = document.querySelector(
-  '[data-js="increase-likes"]'
-);
-
-increaseByOneButton.addEventListener("click", () => {
-  let increaseByOneButton = operand1++;
-
-  output.textContent = increaseByOneButton;
-  console.log(increaseByOneButton);
+  showAnswerButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const answerText = answerTexts[index];
+      if (answerText.hasAttribute("hidden")) {
+        answerText.removeAttribute("hidden");
+        button.setAttribute("aria-expanded", "true");
+        button.textContent = "Hide Answer";
+      } else {
+        answerText.setAttribute("hidden", "");
+        button.setAttribute("aria-expanded", "false");
+        button.textContent = "Show Answer";
+      }
+    });
+  });
 });
-
-const bodyElement = document.querySelector('[data-js="body"]');
-
-const toggleModeButton = document.querySelector('[data-js="toggle-button"]');
-toggleModeButton.addEventListener("click", () => {
-  bodyElement.classList.toggle("dark");
-});
-console.log(toggleModeButton);
