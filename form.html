@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body id="form">
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <h2 class="headlineForm" title="cardCreation">Create a card</h2>
+      <form id="cardCreation" class="form">
+        <label for="your-question">Your Question</label>
+        <textarea id="your-question"></textarea>
+        <label for="your-answer">Your Answer</label>
+        <textarea id="your-answer"></textarea>
+        <label for="tag">Tag</label>
+        <input type="text" id="tag"></input>
+        <label for="submit-button"></label>
+        <button type="submit" id="submit-button">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <nav class="nav">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html" class="iconLink" aria-label="Home"
+              ><i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="bookmarks.html" class="iconLink" aria-label="Bookmarks"
+              ><i class="fas fa-bookmark"></i>
+            </a>
+          </li>
+          <li>
+            <a href="form.html" class="activeIconLink" aria-label="Form"
+              ><i class="fas fa-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="iconLink" aria-label="Profile"
+              ><i class="fas fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

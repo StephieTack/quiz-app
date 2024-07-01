@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="profile.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body id="profile">
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main class="dark" data-js="body">
+      <section class="profile__stage">
+        <img src="assets/person_icon.png" alt="your profile picture" />
+        <h2 class="profile__name">Max Doe</h2>
+      </section>
+      <section class="about">
+        <h3>About me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          totam incidunt ipsa facilis vero sit doloremque blanditiis dolorum
+          tenetur id labore assumenda voluptatem error, facere, saepe harum,
+          quibusdam fugiat quos!
+        </p>
+      </section>
+      <section class="jsFunctions">
+        <button type="Button" class="jsButton" data-js="increase-likes">Likes
+            <output class="outputTextLikes" data-js="like-output"
+            >0</output
+          >
+        </button>
+
+        <button type="Button" class="jsButton" data-js="bookmarks">Bookmark</button>
+        </button>
+      </section>
+      <section class="jsFunctions">
+        <p class="settings">Settings</p>
+        <div class="darkmode">       
+            <p>Dark Mode</p>   
+            <form>
+            <label>
+                <input type="checkbox" checked class="jsButton button--toggle" data-js="toggle-button"/>
+                <span></span>
+            </label>
+        </form>
+    </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="nav">
+        <ul class="breadcrumbs">
+          <li>
+            <a href="index.html" class="iconLink" aria-label="Home"
+              ><i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="bookmarks.html" class="iconLink" aria-label="Bookmarks"
+              ><i class="fas fa-bookmark"></i>
+            </a>
+          </li>
+          <li>
+            <a href="form.html" class="iconLink" aria-label="Form"
+              ><i class="fas fa-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" class="activeIconLink" aria-label="Profile"
+              ><i class="fas fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
+    <script defer src="script.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -19,10 +19,14 @@
       <ul class="containerQuestionCards">
         <li class="questionCard">
           <h2>What property flips the axes in flexbox?</h2>
-          <button class="answerButton" aria-expanded="false">
+          <button
+            class="answerButton"
+            data-js="answer-button"
+            aria-expanded="false"
+          >
             Show Answer
           </button>
-          <p hidden>flex-direction</p>
+          <p hidden class="hiddenText" data-js="answer-text">flex-direction</p>
           <ul class="categoryTags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -30,11 +34,9 @@
           </ul>
           <button class="toggleButton">
             <img
-
               class="buttonImage"
               src="assets/bookmark-white.svg"
               alt="bookmark this question"
-
             />
           </button>
         </li>
@@ -45,10 +47,16 @@
             totam aut doloribus libero nemo dolorem neque, animi modi ipsam.
             Dolore?
           </h2>
-          <button class="answerButton" aria-expanded="false">
+          <button
+            class="answerButton"
+            data-js="answer-button"
+            aria-expanded="false"
+          >
             Show Answer
           </button>
-          <p hidden>flex-direction</p>
+          <p hidden class="hiddenText" data-js="answer-text">
+            This is the answer!
+          </p>
           <ul class="categoryTags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -75,6 +83,11 @@
           <li>
             <a href="bookmarks.html" class="iconLink" aria-label="Bookmarks"
               ><i class="fas fa-bookmark"></i>
+            </a>
+          </li>
+          <li>
+            <a href="form.html" class="iconLink" aria-label="Form"
+              ><i class="fas fa-plus"></i>
             </a>
           </li>
           <li>
