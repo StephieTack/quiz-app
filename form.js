@@ -1,16 +1,16 @@
 console.clear();
 
 // maxlength displaycount for questioninput
-const textInputQuestion = document.getElementById("your-question");
-const countQuestion = document.getElementById("count-question");
+const textInputQuestion = document.querySelector('[data-js="inputQuestion"]');
+const countQuestion = document.querySelector('[data-js="countQuestion"]');
 
 textInputQuestion.addEventListener("input", () => {
   countQuestion.textContent = 150 - textInputQuestion.value.length;
 });
 
-// maxlength displaycount for questioninput
-const textInputAnswer = document.getElementById("your-answer");
-const countAnswer = document.getElementById("count-answer");
+// maxlength displaycount for answerinput
+const textInputAnswer = document.querySelector('[data-js="inputAnswer"]');
+const countAnswer = document.querySelector('[data-js="countAnswer"]');
 
 textInputAnswer.addEventListener("input", () => {
   countAnswer.textContent = 150 - textInputAnswer.value.length;
@@ -36,7 +36,7 @@ form.addEventListener("submit", (event) => {
 
   // adding classlist to the elements
   cardContainer.classList.add("containerQuestionCards");
-  cardList.classList.add("questionCardList");
+  cardList.classList.add("questionCardListItem");
   showAnswerButton.classList.add("answerButton");
   answerText.classList.add("hiddenText");
   tagContainer.classList.add("categoryTags");

@@ -12,45 +12,45 @@
     />
   </head>
   <body id="form">
-    <header class="header">
+    <header class="page__header">
       <h1>Quiz App</h1>
     </header>
     <main>
-      <h2 class="headlineForm" title="cardCreation">Create a card</h2>
-      <form id="cardCreation" class="form" data-js="form">
-        <label for="your-question">Your Question:</label>
-        <textarea required maxlength="150" name="inputQuestion" class="form__textarea" id="your-question"></textarea>
-        <p class="characters"><span id="count-question">150</span> characters left</p>
-        <label for="your-answer">Your Answer:</label>
-        <textarea required maxlength="150" name="inputAnswer" id="your-answer"></textarea>
-        <p class="characters"><span id="count-answer">150</span> characters left</p>
-        <label for="tag">Tag:</label>
-        <input required name="inputTag" type="text" id="tag"></input>
-        <label for="submit-button"></label>
+      <h2 class="formpage__headline" title="cardCreation">Create a card</h2>
+      <form id="cardCreation" class="form__container" data-js="form">
+        <label for="your-question" class="form__label">Your Question:</label>
+        <textarea required maxlength="150" class="form__textarea" data-js="inputQuestion" name="inputQuestion" class="form__textarea" id="your-question"></textarea>
+        <p class="form__characters"><span data-js="countQuestion" id="count-question">150</span> characters left</p>
+        <label for="your-answer" class="form__label">Your Answer:</label>
+        <textarea required maxlength="150" class="form__textarea" data-js="inputAnswer" name="inputAnswer" id="your-answer"></textarea>
+        <p class="form__characters"><span data-js="countAnswer" id="count-answer">150</span> characters left</p>
+        <label for="tag" class="form__label">Tag:</label>
+        <input required class="form__input" name="inputTag" type="text" id="tag"></input>
+        <label for="submit-button" class="form__label"></label>
         <button type="submit" id="submit-button">Submit</button>
       </form>
     </main>
     <footer>
-      <nav class="nav">
-        <ul class="breadcrumbs">
+      <nav class="navigation">
+        <ul class="navigation__list">
           <li>
-            <a href="index.html" class="iconLink" aria-label="Home"
-              ><i class="fas fa-home"></i>
+            <a href="index.html" aria-label="Home"
+              ><i class="fas fa-home navigation__icon"></i>
             </a>
           </li>
           <li>
-            <a href="bookmarks.html" class="iconLink" aria-label="Bookmarks"
-              ><i class="fas fa-bookmark"></i>
+            <a href="bookmarks.html" aria-label="Bookmarks"
+              ><i class="fas fa-bookmark navigation__icon"></i>
             </a>
           </li>
           <li>
-            <a href="form.html" class="activeIconLink" aria-label="Form"
-              ><i class="fas fa-plus"></i>
+            <a href="form.html" aria-label="Form"
+              ><i class="fas fa-plus navigation__icon--active"></i>
             </a>
           </li>
           <li>
-            <a href="profile.html" class="iconLink" aria-label="Profile"
-              ><i class="fas fa-user"></i>
+            <a href="profile.html" aria-label="Profile"
+              ><i class="fas fa-user navigation__icon"></i>
             </a>
           </li>
         </ul>
