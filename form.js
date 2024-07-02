@@ -1,5 +1,22 @@
 console.clear();
 
+// maxlength displaycount for questioninput
+const textInputQuestion = document.getElementById("your-question");
+const countQuestion = document.getElementById("count-question");
+
+textInputQuestion.addEventListener("input", () => {
+  countQuestion.textContent = 150 - textInputQuestion.value.length;
+});
+
+// maxlength displaycount for questioninput
+const textInputAnswer = document.getElementById("your-answer");
+const countAnswer = document.getElementById("count-answer");
+
+textInputAnswer.addEventListener("input", () => {
+  countAnswer.textContent = 150 - textInputAnswer.value.length;
+});
+
+// form events
 const form = document.querySelector('[data-js="form"]');
 
 form.addEventListener("submit", (event) => {
