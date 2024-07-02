@@ -22,3 +22,13 @@ textarea {
 input {
   height: 50px;
 }
+
+.characters {
+  color: grey;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.tagLabel {
+  border: grey solid 1px;
+}
