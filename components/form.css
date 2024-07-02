@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   padding-inline: 30px;
+  padding-bottom: 40px;
   font-size: 1.5rem;
 }
 
@@ -20,4 +21,14 @@ textarea {
 
 input {
   height: 50px;
+}
+
+.characters {
+  color: grey;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.tagLabel {
+  border: grey solid 1px;
 }
