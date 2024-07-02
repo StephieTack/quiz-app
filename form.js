@@ -21,7 +21,7 @@ form.addEventListener("submit", (event) => {
   cardContainer.classList.add("containerQuestionCards");
   cardList.classList.add("questionCardList");
   showAnswerButton.classList.add("answerButton");
-  answerText.classList.add("answerText");
+  answerText.classList.add("hiddenText");
   tagContainer.classList.add("categoryTags");
 
   //adding js-data to the elements
