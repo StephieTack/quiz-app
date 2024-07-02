@@ -15,7 +15,10 @@ increaseByOneButton.addEventListener("click", () => {
 const bodyElement = document.querySelector('[data-js="body"]');
 
 const toggleModeButton = document.querySelector('[data-js="toggle-button"]');
+// toggleModeButton.addEventListener("click", () => {
+//   bodyElement.classList.toggle("dark");
+bodyElement.classList.remove("dark");
+
 toggleModeButton.addEventListener("click", () => {
   bodyElement.classList.toggle("dark");
 });
-console.log(toggleModeButton);
