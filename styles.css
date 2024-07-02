@@ -19,13 +19,13 @@ body {
 }
 
 .dark {
-  background-color: black;
-  color: white;
+  background-color: var(--dark-color);
+  color: var(--dark-accent-color);
 }
 
 .dark * {
-  background-color: black;
-  color: white;
+  background-color: var(--dark-color);
+  color: (--dark-accent-color);
 }
 
 main.dark output {
@@ -34,7 +34,11 @@ main.dark output {
 }
 
 main.dark h2 {
-  background-color: black;
+  background-color: var(--dark-color);
+}
+
+main.dark button {
+  border: white solid;
 }
 
 main {
@@ -208,6 +212,14 @@ h3 {
 
 p {
   font-size: 1.3rem;
+}
+
+.hiddenText {
+  font-size: 1.3rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: white;
+  border: black solid 1px;
 }
 
 .settings {
