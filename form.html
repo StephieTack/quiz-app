@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="form.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body id="form">
+    <header class="page__header">
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      
+      <h2 class="formpage__headline" title="cardCreation">Create a card</h2>
+
+      <form id="cardCreation" class="form__container" data-js="form">
+
+        <label for="your-question" class="form__label">Your Question:</label>
+        <textarea required maxlength="150" class="form__textarea" data-js="inputQuestion" name="inputQuestion" id="your-question"></textarea>
+        <p class="form__characters-count"><span data-js="countQuestion" id="count-question">150</span> characters left</p>
+
+        <label for="your-answer" class="form__label">Your Answer:</label>
+        <textarea required maxlength="150" class="form__textarea" data-js="inputAnswer" name="inputAnswer" id="your-answer"></textarea>
+        <p class="form__characters-count"><span data-js="countAnswer" id="count-answer">150</span> characters left</p>
+
+        <label for="tag" class="form__label">Tag:</label>
+        <input required class="form__input" name="inputTag" type="text" id="tag"></input>
+
+        <label for="submit-button" class="form__label"></label>
+        <button type="submit" id="submit-button">Submit</button>
+
+      </form>
+    </main>
+    <footer>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li>
+            <a href="index.html" aria-label="Home"
+              ><i class="fas fa-home navigation__icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="bookmarks.html" aria-label="Bookmarks"
+              ><i class="fas fa-bookmark navigation__icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="form.html" aria-label="Form"
+              ><i class="fas fa-plus navigation__icon--active"></i>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile"
+              ><i class="fas fa-user navigation__icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

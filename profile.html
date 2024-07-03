@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="profile.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body id="profile">
+    <header class="page__header">
+      <h1>Quiz App</h1>
+    </header>
+    <main class="dark" data-js="body">
+      <section class="profile__stage">
+        <img src="assets/person_icon.png" alt="your profile picture" />
+        <h2 class="profile__name">Max Doe</h2>
+      </section>
+      <section class="profile__about">
+        <h3>About me</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          totam incidunt ipsa facilis vero sit doloremque blanditiis dolorum
+          tenetur id labore assumenda voluptatem error, facere, saepe harum,
+          quibusdam fugiat quos!
+        </p>
+      </section>
+      <section class="profile__section">
+        <button type="Button" class="profile__button-likes" data-js="increaseLikes">Likes
+            <output class="profile__likes-count" data-js="likeOutput"
+            >0</output
+          >
+        </button>
+
+        <button type="Button" class="profile__button-bookmarks" data-js="bookmarksButton">Bookmarks</button>
+        </button>
+      </section>
+      <section class="profile__section">
+        <p class="settings">Settings</p>
+        <div class="profile__togglebutton-darkmode">       
+            <p>Dark Mode</p>   
+            <form>
+            <label>
+                <input type="checkbox" checked class="jsButton cards__bookmark-toggle" data-js="toggle-button"/>
+                <span></span>
+            </label>
+        </form>
+    </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li>
+            <a href="index.html" aria-label="Home"
+              ><i class="fas fa-home navigation__icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="bookmarks.html" aria-label="Bookmarks"
+              ><i class="fas fa-bookmark navigation__icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="form.html" aria-label="Form"
+              ><i class="fas fa-plus navigation__icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html" aria-label="Profile"
+              ><i class="fas fa-user navigation__icon--active"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
